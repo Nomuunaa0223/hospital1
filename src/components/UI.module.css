@@ -1,0 +1,149 @@
+.pageHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 1rem 0 1.8rem;
+}
+
+.pageTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  letter-spacing: .01em;
+}
+
+.pageSubtitle {
+  color: var(--muted);
+  font-size: .9rem;
+  margin-top: .25rem;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  margin: 1rem 0 1.25rem;
+  flex-wrap: wrap;
+}
+
+.searchInput {
+  flex: 0 1 260px;
+  min-width: 220px;
+  background: var(--surface);
+  border: 1px solid var(--accent);
+  border-radius: 12px;
+  padding: .65rem 1rem;
+  color: var(--text);
+  font-family: Manrope, sans-serif;
+  font-size: .875rem;
+  outline: none;
+}
+
+.btnBase {
+  border: none;
+  cursor: pointer;
+  font-family: Manrope, sans-serif;
+  font-weight: 600;
+  transition: transform .1s ease, box-shadow .2s ease, background .2s ease, color .2s ease;
+}
+
+.btn {
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  color: #06101b;
+  padding: .65rem 1.1rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 212, 170, .15);
+}
+
+.btn:hover { transform: translateY(-1px); }
+
+.btnOutline {
+  background: none;
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: .6rem 1.05rem;
+  border-radius: 10px;
+}
+
+.btnDanger {
+  background: transparent;
+  color: var(--danger);
+  padding: .6rem 1.05rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 95, 126, .3);
+}
+
+.btnSm {
+  padding: .4rem .75rem;
+  border-radius: 8px;
+  font-size: .78rem;
+}
+
+.tableCard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1rem;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, .15);
+}
+
+.tableHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: .75rem;
+}
+
+.field { display: flex; flex-direction: column; gap: .45rem; }
+.label { color: var(--muted); font-size: .8rem; }
+
+.input, .select {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: .6rem .8rem;
+  color: var(--text);
+  font-family: Manrope, sans-serif;
+  font-size: .9rem;
+  outline: none;
+  transition: border-color .2s ease, box-shadow .2s ease, background .2s ease;
+}
+
+.input:focus, .select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(0, 212, 170, .12);
+  background: rgba(255, 255, 255, .02);
+}
+
+.select:hover, .input:hover {
+  border-color: rgba(0, 212, 170, .45);
+}
+
+:global(.doctorSelect) {
+  border-color: rgba(0, 212, 170, .55);
+  font-weight: 600;
+  padding: .6rem .8rem;
+  height: 320px;
+  width: 280px;
+  font-size: 1rem;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 1rem;
+}
+
+.modalFooter {
+  display: flex;
+  justify-content: flex-end;
+  gap: .75rem;
+  margin-top: 1.25rem;
+}
+
+.emptyRow, .loadingRow {
+  text-align: center;
+  padding: 5rem;
+  color: var(--muted);
+}
+

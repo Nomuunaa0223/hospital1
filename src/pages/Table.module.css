@@ -1,0 +1,158 @@
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: .88rem;
+}
+
+.table th,
+.table td {
+  padding: .3rem .6rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.table th {
+  color: var(--muted);
+  font-weight: 600;
+  letter-spacing: .01em;
+  background: rgba(255, 255, 255, .01);
+}
+
+.table tr:hover td {
+  background: rgba(255, 255, 255, .02);
+}
+
+.table th:first-child,
+.table td:first-child {
+  min-width: 36px;
+  width: 36px;
+  text-align: center;
+}
+
+.table th:nth-child(2),
+.table td:nth-child(2) {
+  white-space: normal;
+  word-break: break-word;
+  min-width: 140px;
+}
+
+.table th:nth-child(2),
+.table td:nth-child(2),
+.table th:nth-child(3),
+.table td:nth-child(3) {
+  padding-left: .45rem;
+  padding-right: .45rem;
+  min-width: 110px;
+}
+
+.patientsTable th:first-child,
+.patientsTable td:first-child {
+  width: 36px;
+  min-width: 36px;
+  text-align: center;
+}
+
+.patientsTable th,
+.patientsTable td {
+  padding-top: .35rem;
+  padding-bottom: .35rem;
+}
+
+.patientsTable th:nth-child(3),
+.patientsTable td:nth-child(3) {
+  min-width: 140px;
+  max-width: 200px;
+}
+
+.appointmentsTable th:nth-child(5),
+.appointmentsTable td:nth-child(5),
+.appointmentsTable th:nth-child(6),
+.appointmentsTable td:nth-child(6),
+.appointmentsTable th:nth-child(7),
+.appointmentsTable td:nth-child(7) {
+  padding-left: .4rem;
+  padding-right: .4rem;
+  min-width: 90px;
+}
+
+.appointmentsTable th:nth-child(4),
+.appointmentsTable td:nth-child(4) {
+  min-width: 120px;
+}
+
+.actions {
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+}
+
+.editBtn {
+  color: var(--accent);
+  border-color: rgba(0, 212, 170, .35);
+}
+
+.addBtn {
+  box-shadow: none;
+  filter: saturate(.85);
+  opacity: .9;
+}
+
+.scheduleWrap {
+  overflow-x: auto;
+}
+
+.scheduleTable {
+  font-size: .85rem;
+}
+
+.scheduleTimeCol {
+  width: 72px;
+  min-width: 72px;
+}
+
+.scheduleTime {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.scheduleCell {
+  min-width: 140px;
+  vertical-align: top;
+}
+
+.scheduleItem {
+  background: rgba(0, 212, 170, .08);
+  border: 1px solid rgba(0, 212, 170, .25);
+  border-radius: 8px;
+  padding: .35rem .45rem;
+  min-height: 44px;
+  cursor: pointer;
+  transition: transform .1s ease, box-shadow .2s ease, border-color .2s ease;
+}
+
+.scheduleItem:hover {
+  transform: translateY(-1px);
+  border-color: rgba(0, 212, 170, .45);
+  box-shadow: 0 6px 16px rgba(0, 212, 170, .12);
+}
+
+.scheduleItemCompleted {
+  background: rgba(59, 158, 255, .08);
+  border-color: rgba(59, 158, 255, .35);
+}
+
+.scheduleName {
+  font-weight: 600;
+  font-size: .88rem;
+}
+
+.scheduleMeta {
+  margin-top: .2rem;
+}
+
+.scheduleEmpty {
+  color: var(--muted);
+  font-size: .8rem;
+}
+

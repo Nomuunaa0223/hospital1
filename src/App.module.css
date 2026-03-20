@@ -1,0 +1,14 @@
+.app {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main {
+  margin-left: 240px;
+  padding: 2rem;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .main { margin-left: 0; padding: 1.5rem; }
+}

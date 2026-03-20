@@ -1,0 +1,113 @@
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 1.75rem;
+}
+
+.statCard {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid color-mix(in srgb, var(--border) 70%, transparent);
+  border-radius: 16px;
+  padding: 1.1rem 1.2rem;
+  overflow: hidden;
+  min-height: 120px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, .08);
+  transition: transform .12s ease, box-shadow .2s ease;
+}
+
+.statCardCompact {
+  min-height: 76px;
+  padding: .65rem .9rem;
+}
+
+.statGlow {
+  position: absolute;
+  inset: -60% -20% auto;
+  height: 180%;
+  background: radial-gradient(600px 260px at 20% 20%, var(--c), transparent 60%);
+  opacity: .2;
+  pointer-events: none;
+}
+
+.statCard:hover { transform: translateY(-2px); box-shadow: 0 14px 30px rgba(0, 0, 0, .12); }
+.statTop {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  margin-bottom: .45rem;
+}
+.statIcon {
+  font-size: 1.55rem;
+  opacity: .98;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: color-mix(in srgb, var(--c) 14%, transparent);
+  border: 1px solid color-mix(in srgb, var(--c) 28%, transparent);
+  box-shadow: 0 6px 14px color-mix(in srgb, var(--c) 18%, transparent);
+}
+.statIcon img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+.statValue { font-size: 1.85rem; font-weight: 700; letter-spacing: .01em; }
+.statLabel { color: var(--muted); font-size: .98rem; font-weight: 600; }
+
+.tableCard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1rem 1.1rem;
+}
+
+.tableHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: .75rem;
+}
+
+.tableHeader h3 {
+  font-size: 1.02rem;
+  font-weight: 700;
+  letter-spacing: .01em;
+  color: #2f6bff;
+}
+
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.table th,
+.table td {
+  padding: .6rem .75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.table th { color: var(--muted); font-weight: 600; }
+
+.table th:first-child,
+.table td:first-child {
+  width: 36px;
+  min-width: 36px;
+  text-align: center;
+}
+
+.table tbody tr:nth-child(odd) td {
+  background: rgba(255, 255, 255, .015);
+}
+
+.table tbody tr:hover td {
+  background: rgba(255, 255, 255, .03);
+}
+
